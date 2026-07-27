@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaffna Food Guide — Discover Restaurants, Cafes & Street Food in Jaffna</title>
+<meta name="description" content="The complete food directory for Jaffna, Sri Lanka. Find the best restaurants, cafes, street food stalls, reviews and food blogs.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">JFG</span>
+      <span>Jaffna Food Guide<small>Taste the North</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="cafes.html">Cafes</a>
+      <a href="street-food.html">Street Food</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blogs.html">Food Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="restaurants.html" class="btn btn-primary btn-sm"><span>Explore</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-kicker">🌴 Jaffna, Sri Lanka</span>
+        <h1>Find your next <em>favourite meal</em> in Jaffna</h1>
+        <p>From temple-side curry houses to lagoon-view cafes and midnight kottu stalls — discover where Jaffna really eats, with menus, prices and honest reviews.</p>
+        <div class="hero-actions">
+          <a href="restaurants.html" class="btn btn-primary">Browse Restaurants</a>
+          <a href="street-food.html" class="btn btn-outline-light">Explore Street Food</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>120+</strong><span>Places Listed</span></div>
+          <div><strong>4.6★</strong><span>Avg. Rating</span></div>
+          <div><strong>3,400+</strong><span>Reviews</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="search-card">
+      <form id="home-search-form">
+        <div class="search-field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="text" id="home-search-input" placeholder="Search restaurants, cafes or dishes…" aria-label="Search">
+        </div>
+        <div class="search-field" style="max-width:220px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <select aria-label="Location">
+            <option>All Jaffna</option>
+            <option>Nallur</option>
+            <option>Point Pedro</option>
+            <option>Chunnakam</option>
+            <option>Karainagar</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== CATEGORIES ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Browse by category</span>
+          <h2>What are you craving today?</h2>
+        </div>
+        <p class="section-desc">Jump straight to the kind of Jaffna food experience you're after.</p>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="restaurants.html?q=Sri Lankan">
+          <div class="category-icon">🍛</div>
+          <h3>Sri Lankan</h3><span>32 places</span>
+        </a>
+        <a class="category-card" href="restaurants.html?q=Seafood">
+          <div class="category-icon">🦀</div>
+          <h3>Seafood</h3><span>18 places</span>
+        </a>
+        <a class="category-card" href="cafes.html">
+          <div class="category-icon">☕</div>
+          <h3>Cafes</h3><span>24 places</span>
+        </a>
+        <a class="category-card" href="street-food.html">
+          <div class="category-icon">🌯</div>
+          <h3>Street Food</h3><span>40+ stalls</span>
+        </a>
+        <a class="category-card" href="restaurants.html?q=Vegetarian">
+          <div class="category-icon">🥗</div>
+          <h3>Vegetarian</h3><span>15 places</span>
+        </a>
+        <a class="category-card" href="blogs.html">
+          <div class="category-icon">📝</div>
+          <h3>Food Stories</h3><span>Blog</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED RESTAURANTS ========== -->
+  <section class="section section-tight" style="background:var(--cream-soft);">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Top rated</span>
+          <h2>Featured Restaurants</h2>
+        </div>
+        <a href="restaurants.html" class="link-arrow">View all restaurants →</a>
+      </div>
+      <div class="card-grid" id="featured-restaurants"></div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED CAFES ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Slow mornings</span>
+          <h2>Featured Cafes</h2>
+        </div>
+        <a href="cafes.html" class="link-arrow">View all cafes →</a>
+      </div>
+      <div class="card-grid">
+        <article class="food-card">
+          <div class="food-card-media"><img src="cafe-1.svg" alt="Palmyrah Cafe" loading="lazy"><span class="food-card-badge">Cafe</span></div>
+          <div class="food-card-body">
+            <h3>Palmyrah Cafe</h3>
+            <p class="food-card-meta">📍 Hospital Road, Jaffna</p>
+            <p class="food-card-desc">Palmyrah-infused coffee and fresh bakes in a plant-filled courtyard.</p>
+            <div class="food-card-footer"><span class="stars">★★★★☆<span class="rating-number">4.5 (120)</span></span></div>
+          </div>
+        </article>
+        <article class="food-card">
+          <div class="food-card-media"><img src="cafe-3.svg" alt="Lagoon View Cafe" loading="lazy"><span class="food-card-badge">Cafe</span></div>
+          <div class="food-card-body">
+            <h3>Lagoon View Cafe</h3>
+            <p class="food-card-meta">📍 Beach Road, Jaffna</p>
+            <p class="food-card-desc">Sunset views over the lagoon with light bites and fresh juices.</p>
+            <div class="food-card-footer"><span class="stars">★★★★★<span class="rating-number">4.6 (143)</span></span></div>
+          </div>
+        </article>
+        <article class="food-card">
+          <div class="food-card-media"><img src="cafe-2.svg" alt="Veranda Brew" loading="lazy"><span class="food-card-badge">Cafe</span></div>
+          <div class="food-card-body">
+            <h3>Veranda Brew</h3>
+            <p class="food-card-meta">📍 KKS Road, Jaffna</p>
+            <p class="food-card-desc">A tea house specialising in Ceylon black tea and milk toffee.</p>
+            <div class="food-card-footer"><span class="stars">★★★★☆<span class="rating-number">4.3 (74)</span></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POPULAR STREET FOOD ========== -->
+  <section class="section section-tight" style="background:var(--cream-soft);">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Eat on the go</span>
+          <h2>Popular Street Foods</h2>
+        </div>
+        <a href="street-food.html" class="link-arrow">See all street food →</a>
+      </div>
+      <div class="card-grid">
+        <article class="street-card">
+          <div class="street-card-media"><img src="street-1.svg" alt="Jaffna Kottu" loading="lazy"><span class="street-price">Rs 350–600</span></div>
+          <div class="street-card-body"><h3>Jaffna Kottu</h3><p>Chopped roti stir-fried with egg, vegetables and meat.</p></div>
+        </article>
+        <article class="street-card">
+          <div class="street-card-media"><img src="street-2.svg" alt="Mutton Rolls" loading="lazy"><span class="street-price">Rs 80–150</span></div>
+          <div class="street-card-body"><h3>Mutton Rolls</h3><p>Deep-fried pastry stuffed with spiced minced mutton.</p></div>
+        </article>
+        <article class="street-card">
+          <div class="street-card-media"><img src="street-3.svg" alt="Odiyal Kool" loading="lazy"><span class="street-price">Rs 300–500</span></div>
+          <div class="street-card-body"><h3>Odiyal Kool</h3><p>Thick palmyrah-root porridge loaded with seafood.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">What people say</span>
+          <h2>Customer Reviews</h2>
+        </div>
+        <a href="reviews.html" class="link-arrow">Read all reviews →</a>
+      </div>
+      <div class="testimonial-scroll">
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="avatar-1.svg" alt="Anushka K.">
+            <div><div class="review-name">Anushka K.</div><div class="review-place">Nallur Kitchen</div></div>
+          </div>
+          <span class="stars">★★★★★</span>
+          <p class="review-text">The crab curry alone is worth the trip to Jaffna. Warm service and huge portions.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="avatar-2.svg" alt="Suresh N.">
+            <div><div class="review-name">Suresh N.</div><div class="review-place">Jaffna Fort Diner</div></div>
+          </div>
+          <span class="stars">★★★★★</span>
+          <p class="review-text">Beautiful rooftop setting and the fusion kottu bowl was unlike anything I've had.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="avatar-3.svg" alt="Ramya T.">
+            <div><div class="review-name">Ramya T.</div><div class="review-place">Palmyrah Cafe</div></div>
+          </div>
+          <span class="stars">★★★★☆</span>
+          <p class="review-text">Lovely quiet spot to work from in the morning. Their palmyrah iced coffee is a must-try.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LATEST BLOGS ========== -->
+  <section class="section section-tight" style="background:var(--cream-soft);">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Stories & guides</span>
+          <h2>Latest Food Blogs</h2>
+        </div>
+        <a href="blogs.html" class="link-arrow">Visit the blog →</a>
+      </div>
+      <div class="card-grid">
+        <article class="blog-card">
+          <div class="blog-card-media"><img src="blog-1.svg" alt="5 Must-Try Street Foods" loading="lazy"></div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span>Food Guide</span><span>5 min read</span></div>
+            <h3>5 Must-Try Street Foods in Jaffna</h3>
+            <p>From mutton rolls to odiyal kool — here's your street food checklist.</p>
+            <a href="blogs.html" class="link-arrow">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card-media"><img src="blog-2.svg" alt="History of Jaffna Cuisine" loading="lazy"></div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span>Culture</span><span>7 min read</span></div>
+            <h3>The History Behind Jaffna Cuisine</h3>
+            <p>How Tamil, coastal and palmyrah traditions shaped the region's food.</p>
+            <a href="blogs.html" class="link-arrow">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card-media"><img src="blog-3.svg" alt="Best Seafood Spots" loading="lazy"></div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span>Review</span><span>4 min read</span></div>
+            <h3>Best Seafood Spots Along the Coast</h3>
+            <p>Our picks for the freshest crab, prawns and lagoon fish in Jaffna.</p>
+            <a href="blogs.html" class="link-arrow">Read more →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Own a restaurant or cafe in Jaffna?</h2>
+          <p>List your place on Jaffna Food Guide and reach thousands of hungry visitors.</p>
+        </div>
+        <a href="#" class="btn btn-outline-light">List Your Business</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="brand-mark">JFG</span> Jaffna Food Guide</div>
+        <p>Your complete guide to restaurants, cafes, street food and food culture in Jaffna, Sri Lanka.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="cafes.html">Cafes</a></li>
+          <li><a href="street-food.html">Street Food</a></li>
+          <li><a href="blogs.html">Food Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">List Your Business</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.85rem;margin-bottom:12px;">Get new restaurant openings and food stories in your inbox.</p>
+        <form data-simple-form>
+          <div class="form-row" style="display:flex;gap:8px;margin-bottom:0;">
+            <input type="email" placeholder="Your email" required style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);color:#fff;">
+            <button class="btn btn-primary btn-sm" type="submit">Join</button>
+          </div>
+          <p class="form-msg"></p>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Jaffna Food Guide. All rights reserved.</span>
+      <span>Made with ♥ for Jaffna's food lovers.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/94770000000" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.34 1.28 4.79L2 22l5.44-1.36a9.9 9.9 0 004.6 1.15h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0012.04 2m0 1.8a8.08 8.08 0 018.09 8.1c0 4.47-3.63 8.1-8.1 8.1a8.1 8.1 0 01-4.13-1.13l-.3-.17-3.23.81.86-3.15-.19-.32a8.05 8.05 0 01-1.24-4.31c0-4.47 3.63-8.1 8.1-8.1"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

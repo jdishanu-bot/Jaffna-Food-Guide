@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Details — Jaffna Food Guide</title>
+<meta name="description" content="View menu, prices, ratings, location and contact details for restaurants in Jaffna.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">JFG</span>
+      <span>Jaffna Food Guide<small>Taste the North</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="cafes.html">Cafes</a>
+      <a href="street-food.html">Street Food</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blogs.html">Food Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="restaurants.html" class="btn btn-primary btn-sm"><span>Explore</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section-tight" id="restaurant-detail-root">
+    <div class="container">
+      <a href="restaurants.html" class="back-btn on-light">← Back to Restaurants</a>
+
+      <div class="detail-hero">
+        <img id="detail-hero-img" src="restaurant-detail-1.svg" alt="Restaurant">
+      </div>
+
+      <div class="detail-grid">
+        <div>
+          <div class="detail-title-row">
+            <div>
+              <h1 id="detail-name">Restaurant Name</h1>
+              <p class="food-card-meta">📍 <span id="detail-location">Location</span></p>
+            </div>
+            <span id="detail-stars"></span>
+          </div>
+
+          <div class="tag-row" id="detail-tags"></div>
+
+          <h3 style="margin-bottom:10px;">About</h3>
+          <p class="about-text" id="detail-desc">Description loading…</p>
+
+          <h3 style="margin-bottom:18px;">Food Menu</h3>
+          <div class="menu-tabs">
+            <button class="filter-chip menu-tab active" data-tab="All">All</button>
+            <button class="filter-chip menu-tab" data-tab="Starters">Starters</button>
+            <button class="filter-chip menu-tab" data-tab="Mains">Mains</button>
+            <button class="filter-chip menu-tab" data-tab="Sides">Sides</button>
+            <button class="filter-chip menu-tab" data-tab="Desserts">Desserts</button>
+          </div>
+          <div class="menu-list" id="menu-list"></div>
+
+          <h3 style="margin:34px 0 16px;">Gallery</h3>
+          <div class="gallery-strip">
+            <a href="gallery-1.svg" target="_blank" rel="noopener"><img src="gallery-1.svg" alt="Dish photo"></a>
+            <a href="gallery-2.svg" target="_blank" rel="noopener"><img src="gallery-2.svg" alt="Dish photo"></a>
+            <a href="gallery-3.svg" target="_blank" rel="noopener"><img src="gallery-3.svg" alt="Dish photo"></a>
+            <a href="gallery-4.svg" target="_blank" rel="noopener"><img src="gallery-4.svg" alt="Dish photo"></a>
+          </div>
+        </div>
+
+        <aside>
+          <div class="sidebar-card">
+            <h3>Rating</h3>
+            <div class="rating-big">
+              <span class="num" id="detail-rating-num">4.7</span>
+              <div>
+                <span class="stars" id="detail-rating-stars">★★★★★</span>
+                <div id="detail-rating-count" style="font-size:0.8rem;color:var(--ink-soft);">214 reviews</div>
+              </div>
+            </div>
+            <div class="rating-bar-row"><span>Food</span><div class="rating-bar-track"><div class="rating-bar-fill" style="width:92%;"></div></div></div>
+            <div class="rating-bar-row"><span>Service</span><div class="rating-bar-track"><div class="rating-bar-fill" style="width:88%;"></div></div></div>
+            <div class="rating-bar-row"><span>Value</span><div class="rating-bar-track"><div class="rating-bar-fill" style="width:85%;"></div></div></div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Restaurant Info</h3>
+            <ul class="info-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div><strong>Address</strong><span id="detail-address">—</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <div><strong>Hours</strong><span>10:00 AM – 10:00 PM Daily</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+                <div><strong>Price Range</strong><span id="detail-price">—</span></div>
+              </li>
+            </ul>
+            <div class="contact-actions" style="margin-top:16px;">
+              <a href="#" id="map-btn" target="_blank" rel="noopener" class="btn btn-secondary btn-block">
+                📍 Open in Google Maps
+              </a>
+              <a href="#" id="whatsapp-btn" target="_blank" rel="noopener" class="btn btn-teal btn-block">
+                💬 Contact via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Location</h3>
+            <div class="map-embed-placeholder">
+              <iframe id="map-frame" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div style="margin-top:60px;">
+        <div class="section-head">
+          <div><span class="eyebrow">You might also like</span><h2>More Restaurants</h2></div>
+        </div>
+        <div class="card-grid" id="suggested-restaurants"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="brand-mark">JFG</span> Jaffna Food Guide</div>
+        <p>Your complete guide to restaurants, cafes, street food and food culture in Jaffna, Sri Lanka.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="cafes.html">Cafes</a></li>
+          <li><a href="street-food.html">Street Food</a></li>
+          <li><a href="blogs.html">Food Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">List Your Business</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.85rem;margin-bottom:12px;">Get new restaurant openings and food stories in your inbox.</p>
+        <form data-simple-form>
+          <div class="form-row" style="display:flex;gap:8px;margin-bottom:0;">
+            <input type="email" placeholder="Your email" required style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);color:#fff;">
+            <button class="btn btn-primary btn-sm" type="submit">Join</button>
+          </div>
+          <p class="form-msg"></p>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Jaffna Food Guide. All rights reserved.</span>
+      <span>Made with ♥ for Jaffna's food lovers.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/94770000000" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.34 1.28 4.79L2 22l5.44-1.36a9.9 9.9 0 004.6 1.15h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0012.04 2m0 1.8a8.08 8.08 0 018.09 8.1c0 4.47-3.63 8.1-8.1 8.1a8.1 8.1 0 01-4.13-1.13l-.3-.17-3.23.81.86-3.15-.19-.32a8.05 8.05 0 01-1.24-4.31c0-4.47 3.63-8.1 8.1-8.1"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

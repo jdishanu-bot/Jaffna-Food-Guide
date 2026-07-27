@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B3391D"/>
+      <stop offset="100%" stop-color="#241B14"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <circle cx="40" cy="60" r="6" fill="#ffffff" opacity="0.08"/><circle cx="110" cy="113" r="9" fill="#ffffff" opacity="0.08"/><circle cx="180" cy="166" r="12" fill="#ffffff" opacity="0.08"/><circle cx="250" cy="219" r="6" fill="#ffffff" opacity="0.08"/><circle cx="320" cy="272" r="9" fill="#ffffff" opacity="0.08"/><circle cx="390" cy="325" r="12" fill="#ffffff" opacity="0.08"/><circle cx="460" cy="378" r="6" fill="#ffffff" opacity="0.08"/><circle cx="530" cy="431" r="9" fill="#ffffff" opacity="0.08"/><circle cx="600" cy="484" r="12" fill="#ffffff" opacity="0.08"/><circle cx="670" cy="537" r="6" fill="#ffffff" opacity="0.08"/><circle cx="740" cy="590" r="9" fill="#ffffff" opacity="0.08"/><circle cx="810" cy="643" r="12" fill="#ffffff" opacity="0.08"/><circle cx="80" cy="96" r="6" fill="#ffffff" opacity="0.08"/><circle cx="150" cy="149" r="9" fill="#ffffff" opacity="0.08"/><circle cx="220" cy="202" r="12" fill="#ffffff" opacity="0.08"/><circle cx="290" cy="255" r="6" fill="#ffffff" opacity="0.08"/><circle cx="360" cy="308" r="9" fill="#ffffff" opacity="0.08"/><circle cx="430" cy="361" r="12" fill="#ffffff" opacity="0.08"/><circle cx="500" cy="414" r="6" fill="#ffffff" opacity="0.08"/><circle cx="570" cy="467" r="9" fill="#ffffff" opacity="0.08"/><circle cx="640" cy="520" r="12" fill="#ffffff" opacity="0.08"/><circle cx="710" cy="573" r="6" fill="#ffffff" opacity="0.08"/><circle cx="780" cy="626" r="9" fill="#ffffff" opacity="0.08"/><circle cx="50" cy="79" r="12" fill="#ffffff" opacity="0.08"/>
+  <text x="50%" y="48%" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="57" fill="#FFF8EC" font-weight="700">Nallur Kitchen</text>
+  <text x="50%" y="58%" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#FFF8EC" opacity="0.75" letter-spacing="2">JAFFNA CUISINE</text>
+</svg>

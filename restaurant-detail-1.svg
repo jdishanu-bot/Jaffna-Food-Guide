@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B3391D"/>
+      <stop offset="100%" stop-color="#241B14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="700" fill="url(#g)"/>
+  <path d="M0,525.0 Q400.0,455.0 800.0,525.0 T1600,525.0 V700 H0 Z" fill="#ffffff" opacity="0.08"/>
+  <text x="50%" y="48%" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="114" fill="#FFF8EC" font-weight="700">Nallur Kitchen</text>
+  <text x="50%" y="58%" text-anchor="middle" font-family="Arial, sans-serif" font-size="50" fill="#FFF8EC" opacity="0.75" letter-spacing="2">FULL VIEW</text>
+</svg>

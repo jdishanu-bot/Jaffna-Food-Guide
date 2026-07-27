@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="500" viewBox="0 0 700 500">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F6465"/>
+      <stop offset="100%" stop-color="#241B14"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="500" fill="url(#g)"/>
+  <circle cx="40" cy="60" r="6" fill="#ffffff" opacity="0.08"/><circle cx="110" cy="113" r="9" fill="#ffffff" opacity="0.08"/><circle cx="180" cy="166" r="12" fill="#ffffff" opacity="0.08"/><circle cx="250" cy="219" r="6" fill="#ffffff" opacity="0.08"/><circle cx="320" cy="272" r="9" fill="#ffffff" opacity="0.08"/><circle cx="390" cy="325" r="12" fill="#ffffff" opacity="0.08"/><circle cx="460" cy="378" r="6" fill="#ffffff" opacity="0.08"/><circle cx="530" cy="431" r="9" fill="#ffffff" opacity="0.08"/><circle cx="600" cy="484" r="12" fill="#ffffff" opacity="0.08"/><circle cx="670" cy="537" r="6" fill="#ffffff" opacity="0.08"/><circle cx="40" cy="90" r="9" fill="#ffffff" opacity="0.08"/><circle cx="110" cy="143" r="12" fill="#ffffff" opacity="0.08"/><circle cx="180" cy="196" r="6" fill="#ffffff" opacity="0.08"/><circle cx="250" cy="249" r="9" fill="#ffffff" opacity="0.08"/><circle cx="320" cy="302" r="12" fill="#ffffff" opacity="0.08"/><circle cx="390" cy="355" r="6" fill="#ffffff" opacity="0.08"/><circle cx="460" cy="408" r="9" fill="#ffffff" opacity="0.08"/><circle cx="530" cy="461" r="12" fill="#ffffff" opacity="0.08"/><circle cx="600" cy="514" r="6" fill="#ffffff" opacity="0.08"/><circle cx="670" cy="67" r="9" fill="#ffffff" opacity="0.08"/><circle cx="40" cy="120" r="12" fill="#ffffff" opacity="0.08"/><circle cx="110" cy="173" r="6" fill="#ffffff" opacity="0.08"/><circle cx="180" cy="226" r="9" fill="#ffffff" opacity="0.08"/><circle cx="250" cy="279" r="12" fill="#ffffff" opacity="0.08"/>
+  <text x="50%" y="48%" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="50" fill="#FFF8EC" font-weight="700">Kottu Roti</text>
+  <text x="50%" y="58%" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#FFF8EC" opacity="0.75" letter-spacing="2"></text>
+</svg>
